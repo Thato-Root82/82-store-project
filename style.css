@@ -1,0 +1,255 @@
+body{
+    background-color: #F5F5F5 ;
+}
+
+:root {
+    --font-heading: "Arial Black", "Arial Bold", "Helvetica Neue", Helvetica, sans-serif;
+    --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+
+  body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: #1A1A1A ; 
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    letter-spacing: 0.5px; 
+    margin-bottom: 0.5rem;
+  }
+  /* search bar styling here */
+  .search {
+    width: max-content;
+    display: flex;
+    align-items: center; /*makes the icon and textfield be horizontally straight */
+    padding: 14px;/*makes the search bar be on the same level as the other icons*/
+  }
+ 
+  .search-input {
+    font-size: 28px;
+    margin-left: 10px;
+    color: black;
+    outline: none;
+    border: none;
+    background: transparent;
+    display: none;
+  }
+  
+  /* :focus-within ,applies styles to an element if that element OR any of its children are focused*/
+  .search:focus-within .search-input {
+    display: inline-block;
+  }
+  
+/* search bar styling ends here */
+#my-title{
+    font-size: 90px;
+   
+}
+
+nav{
+    cursor: pointer;
+    margin-bottom: 88px;
+    
+}
+.navbar li{
+    float:left;
+
+}
+.navbar ul{
+list-style: none; /* removes bullet points or numbers from list */
+
+background-color:#FF8C00;
+overflow: hidden; /* this and float:left; in .navbar li{} makes that navigation bar horizontal. */
+}
+.navbar a{
+    color: #1A1A1A;
+    font-size: 48px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color:white;
+}
+.last-bar{
+float: right;
+}
+#described{
+    text-align: center;
+  font-size: 30px;
+cursor: pointer;
+}
+
+#top-img{
+    display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Ensures responsiveness */
+  height: 600px;
+  width: 900px;
+  border: none;
+  border-radius: 200px;
+  animation: grow-shrink 3.5s, glow-2 3.8s;
+  animation-iteration-count: infinite;
+  }
+  @keyframes grow-shrink {
+    0% {transform: scale(0.5,0.5);}
+    50%{transform: scale(1,1);}
+   100%{transform: scale(0.5,0.5);}
+}
+@keyframes glow-2{
+    0%{box-shadow: 50px 50px 110px #FF8C00;}
+    5%{box-shadow: 50px 50px 110px #E31937}
+    10%{box-shadow: 50px 50px 110px #FF8C00 ;}
+    15%{box-shadow: 50px 50px 110px #E31937}
+    25%{box-shadow: 50px 50px 110px #FF8C00 ;}
+    35%{box-shadow: 50px 50px 110px #E31937}
+    45%{box-shadow: 50px 50px 110px #FF8C00;}
+    55%{box-shadow: 50px 50px 110px #E31937}
+    65%{box-shadow: 50px 50px 110px #FF8C00 ;}
+    75%{box-shadow: 50px 50px 110px #E31937}
+    85%{box-shadow: 50px 50px 110px #FF8C00 ;}
+    95%{box-shadow: 50px 50px 110px #E31937}
+    100%{box-shadow: 50px 50px 110px #FF8C00 ;}
+}
+.btn{
+    background-color: #FF8C00;
+    color: #1A1A1A;
+    font-size: 50px;
+    padding: 12px 40px;
+    font-weight: 600;
+    border: none;
+    border-radius:50px ;
+    text-align: center;
+
+}
+.btn:active{
+    animation: glow-1;
+animation-duration: 5s;
+}
+@keyframes glow-1{
+    from{background-color: #E31937;}
+}
+
+
+/* styling for shopping page */
+.sneaker {
+    height: auto; 
+    width: 400px; 
+    background-color: #1A1A1A; 
+    color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    overflow: hidden; /* Keeps everything inside rounded corners */
+    margin: 20px; /* Space around each sneaker card */
+ 
+    
+}
+
+.sneaker:hover {
+    animation: 
+    glow 7s infinite,
+   lift 0.4s forwards; /* 'forwards' makes it stay at the end state */
+}
+@keyframes glow{
+    from{box-shadow: 50px 50px 110px #FF8C00; /* x-axis y-axis blur-radius color */;}
+}
+
+@keyframes lift {
+    from { transform: translateY(0); }   /* Start position */
+    to   { transform: translateY(7px); } /* End position (lifted) */
+}
+
+.sneaker img {
+    width: 100%;
+    
+    object-fit: contain; /* Crops image to fit */
+    background-color: #fff; /* White background behind shoe */
+}
+
+.sneaker-info {
+    padding: 15px; 
+}
+
+.sneaker-name {
+    font-family: var(--font-heading);
+    color: #E31937;
+    font-size: 30px;
+
+}
+
+
+.brand, .position, .price {
+    margin: 8px 0; 
+    font-size: 25px;
+    line-height: 1.4;
+}
+
+.price {
+  color: #FF8C00;
+}
+.my-products{
+    display:flex;
+    flex-direction:row;/* sets direction and order of boxes */
+    
+    justify-content:space-evenly;/* sets position on main exes(horizontal line )*/
+
+   flex-wrap: wrap;
+
+   column-gap: 10em;
+   row-gap: 11em;
+   
+}
+/*styling cart page*/
+#for-cart{
+text-align: center;
+margin: auto;
+font-size: 80px;
+opacity: 0.3;
+margin-top: 350px;
+}
+ul li ul.DROP {
+    width: 200px;         
+    background: #FF8C00;
+    position: absolute;
+    right: 0;              
+    z-index: 999;
+    display: none;
+    border-radius: 8px;    
+  }
+  
+  
+  ul li:focus-within ul.DROP {
+    display: block;
+  }
+  /*styling the contact page*/
+ #Facebook,#Instagram,#Xtwitter,#phone,#location,#mail{
+height: auto;
+width: 200px;
+
+ }
+
+#socials{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Ensures responsiveness */
+  height: 600px;
+  width: 900px;
+  border: none;
+  border-radius: 36px;
+ animation: glow-2 5.4s;
+ animation-iteration-count: infinite;
+}
+#GET_US{
+font-size: xx-large;
+float:left;
+} 
+#GET_US section{
+padding-top: 40px;
+
+}
