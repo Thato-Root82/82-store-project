@@ -51,5 +51,5 @@ How to Run
 ----------
 1. Download or clone the project folder.
 2. Open the project in VS Code (or any code editor with Live Server).
-3. Use Live Server to launch `index.html` in a browser.
+3. Use Live Server to launch `index.html` 
 4. Navigate through pages using the navbar links.
