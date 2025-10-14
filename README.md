@@ -1,55 +1,48 @@
-## The 82 Store - HTML & CSS Project
-=================================
+## The 82 Store - HTML & CSS E-commerce Site
 
-Project Overview
-----------------
-"The 82 Store" is a static website built using HTML and CSS, designed to showcase basketball shoes and accessories.
-It features:
+### Overview
+A multi-page basketball e-commerce site for the South African market. Built while learning HTML/CSS fundamentals through a Nike landing page tutorial, then significantly expanded with custom features and architecture.
 
-- Home page with hero section, description, and a "Shop Now" button.
-- Product listing page with styled cards for each item.
-- Shopping cart placeholder page.
-- Contact page with social media links, email, phone, and physical address.
-- Navigation bar with dropdown menu for profile-related options (no actual pages for these yet).
+### What I Built
+- **4-page site**: Home, Products, Cart, Contact
+- **Multi-page navigation** with dropdown menu system
+- **Product showcase**: 18+ basketball shoes and accessories with position-specific recommendations
+- **Interactive features**: Animated search bar, hover effects (glow, lift), growing/shrinking hero logo
+- **Contact page**: Social media integration, email, phone, physical address
 
-Technologies & Tools Used
--------------------------
+### Tech Stack
 - HTML5
-- CSS3
-- Font Awesome (for icons)
-- Live Server extension for real-time preview
-- Firefox Developer Edition (primary browser) and occasional testing in Chrome
-- Personal logo created with Kittl
-- Product images sourced from the internet
+- CSS3 (Flexbox, CSS Animations, Keyframes)
+- Font Awesome icons
+- Custom logo designed with Kittl
 
-Features
---------
-1. Navigation bar with links to Home, Cart, Contact, and dropdown menu options.
-2. Search bar with focus animation.
-3. Product cards with hover lift and glow effects.
-4. Styled buttons and hero section animations.
-5. Contact page with icons for social media and communication.
-6. Fully responsive design using flexbox and CSS properties.
-7. Logo is personal design; all other images are from external sources.
+### Learning Journey
+- **Tutorial base**: Single-page Nike landing page
+- **My additions**: Multi-page architecture, dropdown menu with `:focus-within`, animated search bar, CSS keyframe animations (glow, grow-shrink, lift), flexbox grid layout for products, contact page, custom branding and niche positioning
 
-Project Notes
--------------
-- The shopping cart page is a placeholder; no backend functionality is included.
-- Dropdown menu options in the navbar do not lead to actual pages—they are for design demonstration only.
-- There is no separate landing page for the products; they are directly displayed on the shopping page.
+### Features
+- Navigation bar with dropdown menu for profile options
+- Search bar with focus animation
+- Product cards with hover effects (lift + glow)
+- Styled buttons with active state animations
+- Fully responsive flexbox layout
+- Custom brand identity for SA basketball community
 
-File Structure
---------------
-- index.html          -> Home page
-- shopping_page.html  -> Product listing page
-- cart-page.html      -> Shopping cart placeholder page
-- contact.html        -> Contact page
-- style.css           -> Main stylesheet
-- images/             -> Folder containing all images used in the project
+### Project Notes
+- Shopping cart is a placeholder (no backend functionality)
+- Dropdown menu options are UI demonstrations only
+- Logo is original design; product images sourced externally
+- Tested in Firefox Developer Edition and Chrome
 
-How to Run
-----------
-1. Download or clone the project folder.
-2. Open the project in VS Code (or any code editor with Live Server).
-3. Use Live Server to launch `index.html` 
-4. Navigate through pages using the navbar links.
+### File Structure
+├── index.html              # Home page
+├── shopping_page.html      # Product listing
+├── cart-page.html          # Cart placeholder
+├── contact.html            # Contact page
+├── style.css               # Main stylesheet
+└── images/                 # All project images
+### How to Run
+1. Clone or download the project folder
+2. Open in VS Code (or any editor with Live Server)
+3. Launch `index.html` with Live Server
+4. Navigate using the navbar links
