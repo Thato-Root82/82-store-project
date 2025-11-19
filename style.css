@@ -253,3 +253,266 @@ float:left;
 padding-top: 40px;
 
 }
+/* Responsive Breakpoints */
+@media (max-width: 797px) {
+    /* Styles for screens up to 797px */
+    #my-title {
+        font-size: 70px;
+    }
+    
+    .navbar a {
+        font-size: 36px;
+    }
+    
+    #top-img, #socials {
+        height: 500px;
+        width: 750px;
+        border-radius: 150px;
+    }
+    
+    .btn {
+        font-size: 40px;
+        padding: 10px 30px;
+    }
+    
+    #described {
+        font-size: 26px;
+    }
+    
+    .sneaker {
+        width: 350px;
+    }
+    
+    .sneaker-name {
+        font-size: 26px;
+    }
+    
+    .brand, .position, .price {
+        font-size: 22px;
+    }
+    
+    #for-cart {
+        font-size: 70px;
+        margin-top: 300px;
+    }
+    
+    #GET_US {
+        font-size: x-large;
+    }
+    
+    #Facebook, #Instagram, #Xtwitter, #phone, #location, #mail {
+        width: 180px;
+    }
+}
+
+@media (max-width: 644px) {
+    /* Styles for screens up to 644px */
+    #my-title {
+        font-size: 50px;
+    }
+    
+    .navbar a {
+        font-size: 28px;
+        padding: 8px;
+    }
+    
+    .search {
+        padding: 10px;
+    }
+    
+    .search-input {
+        font-size: 22px;
+    }
+    
+    #top-img, #socials {
+        height: 400px;
+        width: 600px;
+        border-radius: 100px;
+    }
+    
+    .btn {
+        font-size: 32px;
+        padding: 8px 25px;
+    }
+    
+    #described {
+        font-size: 22px;
+    }
+    
+    .my-products {
+        column-gap: 5em;
+        row-gap: 8em;
+    }
+    
+    .sneaker {
+        width: 300px;
+        margin: 15px;
+    }
+    
+    .sneaker-name {
+        font-size: 22px;
+    }
+    
+    .brand, .position, .price {
+        font-size: 18px;
+    }
+    
+    #for-cart {
+        font-size: 50px;
+        margin-top: 250px;
+    }
+    
+    #GET_US {
+        font-size: large;
+        float: none;
+        text-align: center;
+    }
+    
+    #GET_US section {
+        padding-top: 30px;
+    }
+    
+    #Facebook, #Instagram, #Xtwitter, #phone, #location, #mail {
+        width: 150px;
+    }
+    
+    nav {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 516px) {
+    /* Styles for screens up to 516px */
+    #my-title {
+        font-size: 36px;
+    }
+    
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar li {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .last-bar {
+        float: none;
+        width: 100%;
+    }
+    
+    .navbar a {
+        font-size: 24px;
+        padding: 12px;
+    }
+    
+    .search {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .search-input {
+        font-size: 18px;
+    }
+    
+    #top-img, #socials {
+        height: 300px;
+        width: 450px;
+        border-radius: 75px;
+    }
+    
+    .btn {
+        font-size: 28px;
+        padding: 8px 20px;
+    }
+    
+    #described {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    
+    .my-products {
+        flex-direction: column;
+        align-items: center;
+        column-gap: 2em;
+        row-gap: 4em;
+    }
+    
+    .sneaker {
+        width: 280px;
+        margin: 10px;
+    }
+    
+    .sneaker-info {
+        padding: 12px;
+    }
+    
+    .sneaker-name {
+        font-size: 20px;
+    }
+    
+    .brand, .position, .price {
+        font-size: 16px;
+        margin: 6px 0;
+    }
+    
+    #for-cart {
+        font-size: 36px;
+        margin-top: 200px;
+    }
+    
+    #GET_US {
+        font-size: medium;
+    }
+    
+    #GET_US section {
+        padding-top: 20px;
+    }
+    
+    #Facebook, #Instagram, #Xtwitter, #phone, #location, #mail {
+        width: 120px;
+    }
+    
+    nav {
+        margin-bottom: 40px;
+    }
+    
+    /* Fix for dropdown menu on mobile */
+    ul li ul.DROP {
+        width: 100%;
+        position: static;
+        border-radius: 0;
+    }
+}
+
+/* Additional mobile-first responsive adjustments */
+@media (max-width: 400px) {
+    #top-img, #socials {
+        height: 250px;
+        width: 350px;
+        border-radius: 50px;
+    }
+    
+    #my-title {
+        font-size: 30px;
+    }
+    
+    .navbar a {
+        font-size: 20px;
+    }
+    
+    .btn {
+        font-size: 24px;
+    }
+    
+    #described {
+        font-size: 16px;
+    }
+    
+    .sneaker {
+        width: 260px;
+    }
+}
